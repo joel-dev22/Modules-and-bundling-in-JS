@@ -103,3 +103,15 @@ console.log(cloneDeepState);
 if (module.hot) {
   module.hot.accept();
 }
+
+class Person {
+  #greeting = 'Hey';
+  constructor(name) {
+    this.name = name;
+    console.log(`${this.greeting}, ${this.name}`);
+  }
+}
+const joel = new Person('Joel');
+
+import 'core-js/stable/array/find';
+import 'regenerator-runtime/runtime';
